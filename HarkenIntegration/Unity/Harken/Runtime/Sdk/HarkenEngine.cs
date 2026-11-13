@@ -167,7 +167,7 @@ namespace Harken
                 enable01, rampMs);
 
         /// <summary>Sets a bus Direct/output-only lowpass (0) or highpass (1).</summary>
-        internal static VnResult SetBusOutputFilter(VnObjectId busId, uint filterKind,
+        public static VnResult SetBusOutputFilter(VnObjectId busId, uint filterKind,
             float cutoffHz, float q, uint enable01, uint rampMs)
             => HarkenNative.Vn_SetBusOutputFilter(busId, filterKind, cutoffHz, q,
                 enable01, rampMs);
